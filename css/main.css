@@ -171,12 +171,13 @@ body {
   }
 
 /* header__top-panel */
-.header__top-panel { 
+.header__top-panel {
   padding: 15px 0;
   }
 
 .header__in { 
   display: flex;
+  align-items: center; 
   justify-content: space-between;
   }
 
@@ -371,6 +372,52 @@ body {
 /* header__top-panel */
 .header__bottom-panel { 
   background: #6f815b;
+  }
+
+/* header__mob-btn */
+.header__mob-btn { 
+  position: relative;
+  display: none;
+  width: 32px;
+  height: 32px;
+  background: #889a73;
+  border-radius: 100%;
+  cursor: pointer;
+  }
+
+.header__mob-btn:before { 
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/bg/menu.png) center no-repeat;
+  background-size: 14px;
+  content: "";
+  transition: .3s opacity;
+  }
+
+.header__mob-btn.open:before { 
+  opacity: 0;
+  }
+
+.header__mob-btn:after { 
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../img/bg/close.png) center no-repeat;
+  background-size: 14px;
+  opacity: 0;
+  content: "";
+  transition: .3s opacity;
+  }
+
+.header__mob-btn.open:after { 
+  opacity: 1;
   }
 
 /* main-navi */
@@ -899,11 +946,12 @@ body {
 
 .bread-crumbs ul { 
   display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
   list-style: none;
   }
 
 .bread-crumbs li { 
-  margin: 0 3px 0 0;
   font-size: 12px;
   }
 
@@ -990,6 +1038,21 @@ body {
   margin: 0;
   font-size: 14px;
   line-height: 22px;
+  }
+
+/* mob-btn-panel */
+.mob-btn-panel { 
+  display: none;
+  justify-content: center;
+  margin: 0 0 30px;
+  }
+
+.mob-btn-panel_indent-top { 
+  padding: 30px 0 0;
+  }
+
+.mob-btn-panel_indent-bt_none { 
+  margin: 0;
   }
 
 /* pagination */
@@ -1204,7 +1267,7 @@ body {
   margin: 0 0 20px;
   padding: 0 0 0 20px;
   color: #666666;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   }
 
@@ -1228,10 +1291,8 @@ body {
 .social-list { 
   display: flex;
   justify-content: center;
-  }
-
-.social-list li { 
-  margin: 0 5px;
+  flex-wrap: wrap;
+  gap: 5px;
   }
 
 .social-list a { 
@@ -1339,6 +1400,10 @@ body {
 
 .team-info p { 
   margin: 0 0 20px;
+  }
+
+.team-info p:last-child { 
+  margin: 0;
   }
 
 .team-info p span { 
