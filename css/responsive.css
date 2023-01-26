@@ -151,11 +151,10 @@
   }
 
 .shrines { 
-  column-gap: 15px;
+  gap: 15px;
   }
 
 .shrines-item { 
-  margin: 0 0 15px;
   padding: 15px;
   }
 
@@ -170,6 +169,10 @@
 
 .team { 
   grid-template-columns: repeat(2, 1fr);
+  }
+
+.gallery__item { 
+  height: 250px;
   }
 
 .footer__title { 
@@ -300,7 +303,7 @@
   }
 
 .shrines { 
-  column-count: 2;
+  grid-template-columns: repeat(2, 1fr);
   }
 
 .team-info { 
@@ -308,7 +311,7 @@
   }
 
 .team-info__photo {
-  margin: 0 0 30px;
+  margin: 0 auto 30px;
   max-width: 360px; 
   width: 100%;
   }
@@ -333,6 +336,9 @@
   }
 
 .footer__in { 
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
   padding: 20px 0;
   }
 
@@ -360,7 +366,7 @@
   margin: 0 0 20px;
   }
 
-.help { 
+.info { 
   grid-template-columns: repeat(1, 1fr);
   }
 
@@ -368,8 +374,17 @@
   margin: 0 0 50px;
   }
 
-.help__title { 
+.info__title { 
   font-size: 20px;
+  }
+
+.phones { 
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 0 50px;
+  }
+
+.info_indent-bt { 
+  margin: 0 0 50px;
   }
 
 .events { 
@@ -480,10 +495,22 @@
   height: 300px;
   }
 
-.footer__in { 
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
+#comp-k87dtudr { 
+  width: 100%;
+  overflow-x: scroll;
+  }
+
+.nKphmK { 
+  width: 679px;
+  height: 996px;
+  }
+
+.gallery__item { 
+  height: 200px;
+  }
+
+.gallery_three-col .gallery__item { 
+  height: 200px;
   }
 
 }
@@ -496,7 +523,7 @@
   line-height: 32px;
   }
 
-.help-item { 
+.info-item { 
   padding: 20px;
   }
 
@@ -532,11 +559,23 @@
   line-height: 16px;
   }
 
+.phones__item { 
+  padding: 20px;
+  }
+
+.phones__title { 
+  font-size: 18px;
+  }
+
+.phones__number { 
+  font-size: 18px;
+  }
+
 }
 
 @media (max-width: 480px) {
 
-.help-item__description p { 
+.info-item__description p { 
   font-size: 14px;
   }
 
@@ -549,8 +588,11 @@
   }
 
 .gallery {
-  grid-template-columns: repeat(1, 1fr);
   margin: 0 0 30px;
+  }
+
+.gallery_bt-none { 
+  margin: 0;
   }
 
 .library a { 
@@ -664,17 +706,30 @@
   line-height: 30px;
   }
 
-.help-item__icon { 
+.info-item__icon { 
   margin: 0 20px 0 0;
   }
 
-.help-item__description p { 
+.info-item__description p { 
   font-size: 12px;
   line-height: 20px;
   }
 
 .team {
   grid-template-columns: repeat(1, 1fr);
+  }
+
+.phones__icon { 
+  margin: 0 20px 0 0;
+  }
+
+.phones__title { 
+  font-size: 16px;
+  line-height: 18px;
+  }
+
+.phones__number { 
+  font-size: 16px;
   }
 
 .footer__col { 
@@ -684,6 +739,12 @@
 .footer__info li { 
   font-size: 12px;
   line-height: 20px;
+  }
+
+.footer__links li { 
+  margin: 0 7px 0 0;
+  padding: 0 7px 0 0;
+  font-size: 8px;
   }
 
 }

@@ -608,6 +608,12 @@ body {
   cursor: pointer;
   }
 
+.btn_size-sm { 
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 40px;
+  }
+
 .btn:hover { 
   color: #fff;
   background: #889a73;
@@ -618,7 +624,7 @@ body {
   display: grid;
   gap: 0 25px;
   grid-template-columns: 1fr 400px;
-  margin: 0 0 80px;
+  margin: 0 0 50px;
   }
 
 /* news-slider-wrap */
@@ -805,6 +811,7 @@ body {
   }
 
 .schedule .btn { 
+  margin: 20px 0 0;
   width: 100%;
   text-align: center;
   }
@@ -846,7 +853,7 @@ body {
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 0 80px;
+  margin: 0 0 50px;
   padding: 30px 0 0;
   }
 
@@ -891,49 +898,92 @@ body {
   z-index: 3;
   }
 
-/* help */
-.help { 
+/* phones */
+.phones { 
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(2, 1fr);
+  margin: 0 0 80px;
   }
 
-.help-item { 
+.phones__item { 
+  position: relative;
   display: flex;
   align-items: center;
   padding: 30px;
   background: #fff;
   }
 
-.help-item__icon { 
+.phones__icon { 
   flex-shrink: 0;
   margin: 0 30px 0 0;
   width: 60px;
   }
 
-.help-item__icon img { 
+.phones__title { 
+  display: block;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-family: 'Marmelad', sans-serif;
+  line-height: 22px;
+  }
+
+.phones__number { 
+  display: block;
+  color: #666666;
+  font-size: 20px;
+  font-family: 'Marmelad', sans-serif;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  }
+
+/* info */
+.info { 
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+.info_indent-bt { 
+  margin: 0 0 80px;
+  }
+
+.info-item { 
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background: #fff;
+  }
+
+.info-item__icon { 
+  flex-shrink: 0;
+  margin: 0 30px 0 0;
+  width: 60px;
+  }
+
+.info-item__icon img { 
   width: 100%;
   }
 
-.help-item__description { 
+.info-item__description { 
   flex-grow: 1;
   }
 
-.help__title { 
+.info__title { 
   margin: 0 0 10px;
   font-size: 24px;
   font-family: 'Marmelad', sans-serif;
   }
 
-.help__title a { 
+.info__title a { 
   color: #333;
   }
 
-.help__title a:hover { 
+.info__title a:hover { 
   color: #6f815b;
   }
 
-.help-item__description p { 
+.info-item__description p { 
   margin: 0;
   font-size: 16px;
   line-height: 22px;
@@ -1166,6 +1216,11 @@ body {
 
 .gallery__item { 
   position: relative;
+  height: 400px;
+  }
+
+.gallery_three-col .gallery__item { 
+  height: 250px;
   }
 
 .gallery__item a:before { 
@@ -1228,6 +1283,8 @@ body {
 
 .gallery__item img { 
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   }
 
 .gallery__title { 
@@ -1376,14 +1433,13 @@ body {
 
 /* team-info */
 .team-info { 
-  display: flex;
+  display: block;
   padding: 30px;
   background: #f7f9f4;
   }
 
 .team-info__photo { 
-  flex-shrink: 0;
-  margin: 0 35px 0 0;
+  margin: 0 auto 35px;
   width: 360px;
   }
 
@@ -1485,6 +1541,19 @@ body {
 
 .error-404__name span { 
   color: #6f815b;
+  }
+
+/* table-frame */
+#comp-k87dtudr {
+  margin: 0 auto;
+  width: 679px;
+  height: 996px;
+  }
+
+.nKphmK { 
+  position: relative;
+  width: 100%;
+  height: 100%;
   }
 
 /* table */
@@ -1675,12 +1744,12 @@ textarea:focus {
 
 /* shrines */
 .shrines { 
-  column-count: 3;
-  column-gap: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
   }
 
 .shrines-item { 
-  margin: 0 0 30px;
   padding: 20px;
   background: #f7f9f4;
   }
