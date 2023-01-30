@@ -573,6 +573,10 @@ body {
   font-size: 24px;
   }
 
+.title span { 
+  color: #6f815b;
+  }
+
 /* small-title */
 .small-title { 
   margin: 0 0 30px;
@@ -1475,6 +1479,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   }
 
+.library_three-col { 
+  grid-template-columns: repeat(3, 1fr);
+  }
+
+.library_indent-bt { 
+  margin: 0 0 50px;
+  }
+
 .library a { 
   display: block;
   padding: 25px;
@@ -1624,7 +1636,7 @@ body {
 .contacts-col__description dd { 
   color: #666666;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 24px;
   }
 
 .contacts-col__description dd span { 

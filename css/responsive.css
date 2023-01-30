@@ -175,6 +175,10 @@
   height: 250px;
   }
 
+.library_three-col { 
+  grid-template-columns: repeat(1, 1fr);
+  }
+
 .footer__title { 
   font-size: 16px;
   line-height: normal;
