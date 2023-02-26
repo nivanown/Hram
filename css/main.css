@@ -774,8 +774,9 @@ body {
   }
 
 .schedule p { 
-  margin: 0 0 40px;
+  margin: 0 0 10px;
   font-family: 'Marmelad', sans-serif;
+  line-height: 20px;
   }
 
 /* date */
